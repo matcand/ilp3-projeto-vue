@@ -1,39 +1,45 @@
-# 🚀 Sistema de Gerenciamento de Usuários — SPA em Vue.js 3
+# 🚀 Single Page Applications (SPA) — Vue.js & React
 
 Projeto prático desenvolvido durante a disciplina de **Linguagens de Programação III (ILP3)** no curso de **Informática para Negócios** da **FATEC São Bernardo do Campo (FATEC SBC)**.
 
-O objetivo deste repositório é documentar a evolução prática na construção de uma **Single Page Application (SPA)** completa, aplicando padrões de arquitetura front-end de mercado, componentização, gerenciamento de estado global e consumo de APIs REST.
-
----
+O objetivo deste repositório é documentar a evolução prática na construção de aplicações front-end modernas, aplicando padrões de arquitetura de mercado, componentização e consumo de APIs utilizando **Vue.js 3** e **React**.
 
 ## 🛠️ Tecnologias Utilizadas
 
+### Módulo 1: Vue.js
 * **Vue.js 3** (Options API & Composition API `setup`)
-* **Vite** (Build tool e servidor de desenvolvimento rápido)
-* **Vue Router 4** (Roteamento dinâmico e navegação SPA)
+* **Vue Router 4** (Roteamento dinâmico e navegação)
 * **Pinia** (Gerenciamento de estado global centralizado)
 * **Axios** (Cliente HTTP para consumo de API REST)
-* **JavaScript (ES6+)**, **HTML5** e **CSS3 Scoped**
+
+### Módulo 2: React
+* **React 18** (Componentes Funcionais & Hooks `useState`)
+* **JSX** (JavaScript XML)
+
+### Ferramentas Base
+* **Vite** (Build tool e servidor de desenvolvimento rápido)
+* **JavaScript (ES6+)**, **HTML5** e **CSS3**
 * **IDE:** JetBrains IntelliJ IDEA
 
----
+## 📈 Evolução das Aulas (Roadmap do Semestre)
 
-## 📂 Arquitetura do Projeto (Padrão de Mercado)
+### 🟢 Módulo Vue.js (Concluído)
+- [x] **Aulas 01 a 03 — Fundamentos:** Single File Components (`.vue`), interpolação, diretivas e reatividade básica.
+- [x] **Aula 04 — Eventos:** Comunicação Filho → Pai utilizando `$emit`, *props* e fluxo unidirecional.
+- [x] **Aula 05 — Computed & Watchers:** Cálculos derivados com cache (`computed`) e monitoramento de estado (`watch`).
+- [x] **Aula 06 — Ciclo de Vida (Lifecycle Hooks):** Controle de execução com `created`, `mounted`, `updated` e `unmounted`.
+- [x] **Aula 07 — Vue Router:** Estruturação de SPA, parâmetros dinâmicos via URL e rota 404.
+- [x] **Aula 08 — Consumo de API (Axios):** Integração com REST API pública (`async/await`) e *loading states*.
+- [x] **Aula 09 — Estado Global (Pinia):** Centralização de dados em *Stores* (`state`, `getters` e `actions`).
+- [x] **Aula 10 — Mini Projeto CRUD Completo:** Sistema completo de gerenciamento de usuários em arquitetura profissional.
 
-```text
-src/
-├── components/       # Componentes visuais reutilizáveis (UI)
-│   ├── UserForm.vue  # Formulário reativo para criação e edição
-│   └── UserTable.vue # Tabela de exibição e disparo de ações
-├── views/            # Páginas completas conectadas às rotas
-│   ├── HomeView.vue
-│   ├── UsersView.vue
-│   └── UserDetailView.vue
-├── stores/           # Estado global e regras de negócio (Pinia)
-│   └── userStore.vue / userStore.js
-├── services/         # Configuração de comunicação externa (Axios)
-│   └── api.js
-├── router/           # Configuração central de rotas (Vue Router)
-│   └── index.js
-├── App.vue           # Layout base da aplicação
-└── main.js           # Ponto de entrada e registro de plugins
+### 🔵 Módulo React (Em Andamento)
+- [x] **Aula 11 — Introdução ao React e JSX:** Configuração com Vite, Virtual DOM, Componentes Funcionais e uso de `props`.
+- [x] **Aula 12 — Props e State:** Gerenciamento de estado reativo com `useState`, imutabilidade, fluxo unidirecional (Pai → Filho) e renderização de listas dinâmicas com cálculo agregado (`.reduce()`).
+- [ ] **Aulas 13 a 15:** *(Em andamento)*
+
+## ⚙️ Como Executar os Projetos Localmente
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/matcand/ilp3-projeto-vue.git](https://github.com/matcand/ilp3-projeto-vue.git)
